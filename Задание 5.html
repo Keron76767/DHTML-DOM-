@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 5</title>
+</head>
+<body>
+  <input type="text" id="num1" placeholder="Число 1">
+  <input type="text" id="num2" placeholder="Число 2">
+  <button onclick="calculateSum()">Сложить</button>
+  <span id="result">Результат</span>
+
+  <script>
+    function calculateSum() 
+    {
+      var num1 = parseInt(document.getElementById('num1').value) || 0;
+      var num2 = parseInt(document.getElementById('num2').value) || 0;
+      var sum = num1 + num2;
+      document.getElementById('result').innerText = sum;
+    }
+  </script>
+</body>
+</html>

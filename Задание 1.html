@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 1</title>
+</head>
+<body>
+  <input type="text" id="imageNameInput" placeholder="Имя картинки">
+  <button onclick="changeImage()">Изменить картинку</button>
+
+  <br>
+
+  <img id="myImage" src="https://img.freepik.com/free-photo/mountains-lake_1398-1150.jpg?size=626&ext=jpg" alt="Initial Image">
+
+  <script>
+    function changeImage() 
+    {
+      var imageName = document.getElementById('imageNameInput').value;
+      var imageUrl = getImageUrlFromInput(imageName);
+      document.getElementById('myImage').src = imageUrl;
+    }
+
+    function getImageUrlFromInput(imageName) 
+    {
+      return imageName;
+    }
+  </script>
+</body>
+</html>

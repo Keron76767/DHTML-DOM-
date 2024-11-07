@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 4</title>
+</head>
+<body>
+  <input type="text" id="borderThicknessInput" placeholder="Толщина рамки">
+  <input type="text" id="borderColorInput" placeholder="Цвет рамки">
+  <button onclick="changeTableBorder()">Изменить рамку таблицы</button>
+  <table id="myTable" border="1">
+    <tr>
+      <td>Ячейка 1</td>
+      <td>Ячейка 2</td>
+    </tr>
+    <tr>
+      <td>Ячейка 3</td>
+      <td>Ячейка 4</td>
+    </tr>
+  </table>
+
+  <script>
+    function changeTableBorder() 
+    {
+      var thickness = document.getElementById('borderThicknessInput').value;
+      var color = document.getElementById('borderColorInput').value;
+      var table = document.getElementById('myTable');
+      table.style.borderWidth = thickness + 'px';
+      table.style.borderColor = color;
+    }
+  </script>
+</body>
+</html>

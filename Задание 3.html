@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 3</title>
+</head>
+<body>
+  <input type="text" id="textColorInput" placeholder="Цвет текста">
+  <input type="text" id="bgColorInput" placeholder="Цвет фона">
+  <button onclick="changeColors()">Изменить цвета</button>
+  <p id="colorChangeParagraph">Текст для изменения цвета</p>
+
+  <script>
+    function changeColors() 
+    {
+      var textColor = document.getElementById('textColorInput').value;
+      var bgColor = document.getElementById('bgColorInput').value;
+      var paragraph = document.getElementById('colorChangeParagraph');
+      paragraph.style.color = textColor;
+      paragraph.style.backgroundColor = bgColor;
+    }
+  </script>
+</body>
+</html>
